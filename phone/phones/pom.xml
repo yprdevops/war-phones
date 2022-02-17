@@ -55,7 +55,12 @@
         <openwebbeans.version>1.1.4</openwebbeans.version>
         <codi.version>1.0.5</codi.version>
     </properties>
-
+         
+  <properties>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>       
+                
     <build>
         <finalName>phones</finalName>
         <plugins>
@@ -176,12 +181,9 @@
             <scope>test</scope>
         </dependency>
 
-    </dependencies>
-  <properties>
-   <maven.compiler.source>1.8</maven.compiler.source>
-   <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>                  
-    <profiles>
+     </dependencies>                
+    
+         <profiles>
         <profile>
             <id>bundle-myfaces</id>
             <activation>
